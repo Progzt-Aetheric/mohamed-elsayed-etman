@@ -24,7 +24,12 @@
         window.dispatchEvent(new Event("progzt-language-change"));
 
         translations.forEach(element => {
-            element.textContent = element.dataset[activeLanguage];
+            const translatedText = element.dataset[activeLanguage];
+            if (element instanceof HTMLImageElement) {
+                element.alt = translatedText;
+            } else {
+                element.textContent = translatedText;
+            }
         });
 
         labels.forEach(element => {

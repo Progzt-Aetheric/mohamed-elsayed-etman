@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://progzt-aetheric.github.io/</loc>
         <lastmod>2026-11-12</lastmod>
@@ -15,6 +16,9 @@
     <url>
         <loc>https://progzt-aetheric.github.io/achievements.html</loc>
         <lastmod>2026-11-12</lastmod>
+        <image:image>
+            <image:loc>https://progzt-aetheric.github.io/file_00000000e6408246aac75b0e81eb1699.png</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://progzt-aetheric.github.io/template.html</loc>
