@@ -50,13 +50,9 @@
         .timeline time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; font-weight: 600; }
         .timeline h3 { margin: 0 0 5px; font-size: 1.05rem; font-weight: 650; }
         .timeline p { max-width: 760px; margin: 0; color: #414141; font-size: 15px; }
-        .titles-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-        .title-card { min-height: 100%; border: 1px solid var(--line); padding: clamp(20px, 3.5vw, 32px); background: #fff; }
-        .title-card h3 { margin: 0; font-size: 1.05rem; font-weight: 650; line-height: 1.65; }
         .initiative { padding: clamp(20px, 4vw, 36px); border: 1px solid var(--line); }
         .initiative h3 { margin: 0 0 10px; font-size: 1.2rem; font-weight: 650; }
         .initiative p { margin: 0; color: #414141; font-size: 15px; line-height: 1.9; }
-        @media (max-width: 700px) { .titles-grid { grid-template-columns: 1fr; } }
         @media (max-width: 520px) { .timeline li { grid-template-columns: 56px minmax(0, 1fr); gap: 12px; } }
     </style>
 
@@ -100,6 +96,27 @@
           "founder": {
             "@id": "https://progzt-aetheric.github.io/mohamed-elsayed-etman/#founder"
           }
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://progzt-aetheric.github.io/mohamed-elsayed-etman/#home-image",
+          "contentUrl": "https://progzt-aetheric.github.io/mohamed-elsayed-etman/file_00000000e6408246aac75b0e81eb1699.png",
+          "url": "https://progzt-aetheric.github.io/mohamed-elsayed-etman/file_00000000e6408246aac75b0e81eb1699.png",
+          "width": 1420,
+          "height": 1108,
+          "caption": [
+            {
+              "@value": "محمد السيد عتمان، مؤسس ورئيس تنفيذي لشركة Progzt Aetheric، يتحدث من على منصة",
+              "@language": "ar"
+            },
+            {
+              "@value": "Mohamed Elsayed Etman, Founder & CEO of Progzt Aetheric, speaking at a podium",
+              "@language": "en"
+            }
+          ],
+          "about": {
+            "@id": "https://progzt-aetheric.github.io/mohamed-elsayed-etman/#founder"
+          }
         }
       ]
     }
@@ -118,6 +135,7 @@
         <nav class="site-nav" aria-label="التنقل الرئيسي" data-ar-label="التنقل الرئيسي" data-en-label="Main navigation">
             <a href="index.html" aria-current="page" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
             <a href="partners.html" data-ar="الشركاء" data-en="Partners">الشركاء</a>
+            <a href="achievements.html" data-ar="الإنجازات" data-en="Achievements">الإنجازات</a>
             <a href="contact.html" data-ar="تواصل" data-en="Contact">تواصل</a>
         </nav>
     </header>
@@ -132,14 +150,14 @@
         <section class="home-section" aria-labelledby="biography-heading">
             <p class="section-label" data-ar="نبذة تعريفيّة" data-en="ABOUT">نبذة تعريفيّة</p>
             <h2 id="biography-heading" data-ar="رائد أعمال، مبتكر، وسفير ومستشار عالمي مصري" data-en="Egyptian Entrepreneur, Innovator, Global Youth Ambassador &amp; Advisor">رائد أعمال، مبتكر، وسفير ومستشار عالمي مصري</h2>
-            <p data-ar="يُعدّ محمد السيد عتمان من أصغر قادة قطاع التكنولوجيا والأعمال على مستوى العالم. وُلد في محافظة الدقهلية بمصر عام 2011. أظهر شغفًا مبكرًا بهندسة النظم وتطوير برمجيات الويب، لينتقل سريعًا من مرحلة الشغف الفردي إلى تأسيس شركة تقنية دولية متعددة القطاعات ترتكز على الابتكار المتقدم، وحلول الذكاء الاصطناعي، وبناء البنى التحتية البرمجية."
-                data-en="Mohamed Elsayed Etman is considered one of the youngest leaders in technology and business worldwide. Born in Dakahlia Governorate, Egypt, in 2011, he showed an early passion for systems engineering and web software development. He quickly moved from individual interest to founding a multi-sector international technology company focused on advanced innovation, artificial intelligence solutions, and building software infrastructure.">يُعدّ محمد السيد عتمان من أصغر قادة قطاع التكنولوجيا والأعمال على مستوى العالم. وُلد في محافظة الدقهلية بمصر عام 2011. أظهر شغفًا مبكرًا بهندسة النظم وتطوير برمجيات الويب، لينتقل سريعًا من مرحلة الشغف الفردي إلى تأسيس شركة تقنية دولية متعددة القطاعات ترتكز على الابتكار المتقدم، وحلول الذكاء الاصطناعي، وبناء البنى التحتية البرمجية.</p>
+            <p data-ar="محمد السيد عتمان هو رائد أعمال، مبتكر، وسفير ومستشار عالمي مصري. وُلد في محافظة الدقهلية بمصر عام 2011. أظهر شغفًا مبكرًا بهندسة النظم وتطوير برمجيات الويب، لينتقل سريعًا من مرحلة الشغف الفردي إلى تأسيس شركة تقنية دولية متعددة القطاعات ترتكز على الابتكار المتقدم، وحلول الذكاء الاصطناعي، وبناء البنى التحتية البرمجية."
+                data-en="Mohamed Elsayed Etman is an Egyptian entrepreneur, innovator, and global ambassador and advisor. Born in Dakahlia Governorate, Egypt, in 2011, he showed an early passion for systems engineering and web software development. He quickly moved from individual interest to founding a multi-sector international technology company focused on advanced innovation, artificial intelligence solutions, and building software infrastructure.">محمد السيد عتمان هو رائد أعمال، مبتكر، وسفير ومستشار عالمي مصري. وُلد في محافظة الدقهلية بمصر عام 2011. أظهر شغفًا مبكرًا بهندسة النظم وتطوير برمجيات الويب، لينتقل سريعًا من مرحلة الشغف الفردي إلى تأسيس شركة تقنية دولية متعددة القطاعات ترتكز على الابتكار المتقدم، وحلول الذكاء الاصطناعي، وبناء البنى التحتية البرمجية.</p>
             <figure class="profile-image">
-                <img src="file_000000004f8c8211bc257b7ca1748283.png"
-                    width="941" height="1671" loading="lazy" decoding="async"
-                    data-ar="محمد السيد عتمان، مؤسس ورئيس تنفيذي لشركة Progzt Aetheric"
-                    data-en="Mohamed Elsayed Etman, Founder &amp; CEO of Progzt Aetheric"
-                    alt="محمد السيد عتمان، مؤسس ورئيس تنفيذي لشركة Progzt Aetheric">
+                <img src="file_00000000e6408246aac75b0e81eb1699.png"
+                    width="1420" height="1108" loading="lazy" decoding="async"
+                    data-ar="محمد السيد عتمان، مؤسس ورئيس تنفيذي لشركة Progzt Aetheric، يتحدث من على منصة"
+                    data-en="Mohamed Elsayed Etman, Founder &amp; CEO of Progzt Aetheric, speaking at a podium"
+                    alt="محمد السيد عتمان، مؤسس ورئيس تنفيذي لشركة Progzt Aetheric، يتحدث من على منصة">
             </figure>
         </section>
 
@@ -180,25 +198,6 @@
                     <div><h3 data-ar="الترسيخ المؤسسي" data-en="Institutional establishment">الترسيخ المؤسسي</h3><p data-ar="تسجيل شركة Progzt Aetheric كشركة بريطانية رسمية مقرها الرئيسي لندن، المملكة المتحدة." data-en="Registered Progzt Aetheric as an official British company headquartered in London, United Kingdom.">تسجيل شركة Progzt Aetheric كشركة بريطانية رسمية مقرها الرئيسي لندن، المملكة المتحدة.</p></div>
                 </li>
             </ol>
-        </section>
-
-        <section class="home-section" aria-labelledby="achievements-heading">
-            <p class="section-label" data-ar="الألقاب والعضويات الدولية" data-en="GLOBAL TITLES &amp; MEMBERSHIPS">الألقاب والعضويات الدولية</p>
-            <h2 id="achievements-heading" data-ar="الإنجازات والألقاب الدولية" data-en="Achievements &amp; Global Titles">الإنجازات والألقاب الدولية</h2>
-            <div class="titles-grid">
-                <article class="title-card">
-                    <h3 data-ar="سفير شباب منظمة الحقوق الخمسة للشباب" data-en="5Rights Youth Ambassador">سفير شباب منظمة الحقوق الخمسة للشباب</h3>
-                </article>
-                <article class="title-card">
-                    <h3 data-ar="سفراء الشباب العالميون لمؤسسة سميثسونيان" data-en="Smithsonian Global Youth Ambassadors">سفراء الشباب العالميون لمؤسسة سميثسونيان</h3>
-                </article>
-                <article class="title-card">
-                    <h3 data-ar="عضو المجلس الاستشاري العالمي للشباب (مؤسسة Born This Way)" data-en="Born This Way Foundation – Global Youth Advisory Board Member">عضو المجلس الاستشاري العالمي للشباب (مؤسسة Born This Way)</h3>
-                </article>
-                <article class="title-card">
-                    <h3 data-ar="سفير شبابي لـ NESST" data-en="NESST Youth Ambassador">سفير شبابي لـ NESST</h3>
-                </article>
-            </div>
         </section>
 
         <section class="home-section" aria-labelledby="initiatives-heading">
