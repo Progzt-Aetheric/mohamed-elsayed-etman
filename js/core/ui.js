@@ -40,17 +40,6 @@
             element.setAttribute("placeholder", element.dataset[`placeholder${isEnglish ? "En" : "Ar"}`]);
         });
 
-        const title = page.dataset[`title${isEnglish ? "En" : "Ar"}`];
-        if (title) {
-            document.title = title;
-        }
-
-        const description = page.dataset[`description${isEnglish ? "En" : "Ar"}`];
-        const descriptionMeta = document.querySelector('meta[name="description"]');
-        if (description && descriptionMeta) {
-            descriptionMeta.content = description;
-        }
-
         languageButtons.forEach(button => {
             button.textContent = isEnglish ? "AR" : "EN";
             button.setAttribute("aria-label", isEnglish ? "Switch to Arabic" : "Switch to English");
